@@ -18,7 +18,10 @@ DJANGO_APPS = [
     'django.contrib.staticfiles',
 ]
 
-THIRD_PARTY_APPS = []
+THIRD_PARTY_APPS = [
+    'crispy_forms',
+    'ckeditor',
+]
 
 LOCAL_APPS = [
     'apps.alumnos',
