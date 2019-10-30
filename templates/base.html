@@ -16,7 +16,6 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item dropdown">
@@ -100,7 +99,8 @@
 			</div>
 		</div>
 	</nav>
-	{% block content %}{% endblock content %}
+	{% block content %}
+	{% endblock content %}
 	<script src="{% static 'js/jquery-3.3.1.slim.min.js' %}"></script>
 	<script src="{% static 'js/popper.min.js' %}"></script>
 	<script src="{% static 'js/bootstrap.min.js' %}"></script>

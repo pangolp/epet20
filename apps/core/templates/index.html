@@ -1,1 +1,43 @@
 {% extends 'base.html' %}
+{% block content %}
+	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="https://picsum.photos/1600/500?random=1" class="d-block w-100" alt="">
+			</div>
+			<div class="carousel-item">
+				<img src="https://picsum.photos/1600/500?random=2" class="d-block w-100" alt="">
+			</div>
+			<div class="carousel-item">
+				<img src="https://picsum.photos/1600/500?random=3" class="d-block w-100" alt="">
+			</div>
+		</div>
+		<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+	<div class="container">
+		<div class="row mt-2">
+			<div class="col-lg-4">
+				<div class="list-group list-group-flush text-center">
+					<a href="#" class="list-group-item active disabled">
+						Documentación
+					</a>
+					<a href="https://drive.google.com/drive/folders/16MO74DU7YGey9zxbtH95UijXw97w8adx" target="_blank" class="list-group-item">General</a>
+					<a href="https://drive.google.com/drive/folders/1tmcDYY1MemoYGB4NVzhKX56HErcjQrkU" target="_blank" class="list-group-item">Cuadernillos 2019</a>
+					<a href="https://drive.google.com/drive/folders/1N8qbK1iHvn24GIdV40znym9mqzgnaX7G" target="_blank" class="list-group-item">Programas de Alumnos Regulares</a>
+					<a href="https://drive.google.com/drive/folders/1hZOIluyyIkxrnZDhany8s3kEayjxX8-R" target="_blank" class="list-group-item" tabindex="-1" aria-disabled="true">Programa de Alumnos Previos</a>
+					<a href="https://drive.google.com/drive/folders/101XubnER5NxF-wcGMUEZ2VMol0qhEc1m" target="_blank" class="list-group-item" tabindex="-1" aria-disabled="true">Programa de Alumnos Libres y Equivalencias</a>
+				</div>
+			</div>
+			<div class="col-lg-8">
+				
+			</div>
+		</div>
+	</div>
+{% endblock content %}
