@@ -20,7 +20,16 @@ DJANGO_APPS = [
 
 THIRD_PARTY_APPS = []
 
-LOCAL_APPS = []
+LOCAL_APPS = [
+    'apps.alumnos',
+    'apps.asesoria',
+    'apps.biblioteca',
+    'apps.core',
+    'apps.institucional',
+    'apps.preceptoria',
+    'apps.secretaria',
+    'apps.taller',
+]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
