@@ -25,8 +25,9 @@ class Novedad(models.Model):
 	fecha_modificado = models.DateTimeField(auto_now=True)
 	slug = models.SlugField(max_length=255, editable=False)
 
-	def slug(self):
-		return slugify(self.titulo)
+	def save(self, *args, **kwargs):
+		self.slug = slugify(self.titulo)
+		super().save(*args, **kwargs)
 
 	def __str__(self):
 		return self.titulo
