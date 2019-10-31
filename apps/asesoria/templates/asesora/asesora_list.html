@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block titulo %}Asesoria: Asesoras{% endblock titulo %}
+{% block content %}
+<div class="container">
+	<div class="row mt-3">
+		<div class="col-md-12">
+			{% for asesora in asesoras %}
+				<ul>
+					<li><strong>Apellido: </strong>{{ asesora.apellido|title }}</li>
+					<li><strong>Nombre: </strong>{{ asesora.nombre|title }}</li>
+					<li><strong>Email: </strong>{{ asesora.email }}</li>
+				</ul>
+				<table class="table table-sm text-center">
+					<thead>
+						<tr class="thead-light">
+							<th>Dia</th>
+							<th>Horario de entrada</th>
+							<th>Horario de salida</th>
+						</tr>
+					</thead>
+					<tbody>
+						{% for horario in asesora.horario_set.all %}
+							<tr>
+								<td>{{ horario.dia|title }}</td>
+								<td>{{ horario.horario_inicio }}</td>
+								<td>{{ horario.horario_fin }}</td>
+							</tr>
+						{% endfor %}
+					</tbody>
+				</table>
+				<hr>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% endblock content %}
