@@ -7,5 +7,6 @@
 
 ### Algunas imágenes de los avances
 
-![Novedades](https://subefotos.com/ver/?f85df482a3c09bb75be7f19c229bbce2o.png)
-![Detalle de novedades](https://subefotos.com/ver/?f632d47b2595047b0395fa82bc54b9d1o.png)
+![Novedades](../../ejemplos/asesoria/asesoria_novedades.png)
+
+![Detalle de novedades](../../ejemplos/asesoria/asesoria_novedades_detail.png)
