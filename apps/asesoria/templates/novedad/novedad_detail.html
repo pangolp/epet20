@@ -1,4 +1,15 @@
 {% extends 'base.html' %}
 {% block titulo %}{{ novedad.titulo }}{% endblock titulo %}
 {% block content %}
+<div class="container">
+	<div class="row mt-2">
+		<div class="col-md-12">
+			<img src="{{ novedad.imagen.url }}" class="img-fluid" alt="Responsive image">
+			<h2 class="text-center mt-2 alert alert-info"><strong>{{ novedad.titulo }}</strong></h2>
+			<h4 class="text-center mt-2">Categoría: <strong>{{ novedad.categoria }}</strong></h4>
+			<div>{{ novedad.contenido|safe|escape }}</div>
+			<h5 class="text-center mt-2 alert alert-info">Publicado por: <strong>{{ novedad.user.last_name|title }}, {{ novedad.user.first_name|title }}</strong> - Fecha de publicación: <strong>{{ novedad.fecha_alta|date:"d-m-y" }}</strong></h5>
+		</div>
+	</div>
+</div>
 {% endblock content %}
