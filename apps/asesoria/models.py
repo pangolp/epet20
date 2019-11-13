@@ -8,8 +8,9 @@ class Categoria(models.Model):
 	nombre = models.CharField(max_length=50, help_text='nombre de la categoría. Ejemplo: Padres, Alumnos, ..')
 	slug = models.SlugField(max_length=50, editable=False)
 
-	def slug(self):
-		return slugify(self.nombre)
+	def save(self, *args, **kwargs):
+		self.slug = slugify(self.nombre)
+		super().save(*args, **kwargs)
 
 	def __str__(self):
 		return self.nombre
