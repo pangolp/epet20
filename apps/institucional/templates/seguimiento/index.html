@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block titulo %}Institucional{% endblock titulo %}
+{% block content %}
+<div class="container">
+	<div class="row mt-5">
+		<div class="col-md-12">
+			<table class="table table-sm text-center">
+				<thead>
+					<tr>
+						<th scope="col">#</th>
+						<th scope="col">Fecha</th>
+						<th scope="col">Profesor</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for seguimiento in seguimientos %}
+						<tr>
+							<td>{{ seguimiento.id }}</td>
+							<td>{{ seguimiento.fecha }}</td>
+							<td>{{ seguimiento.profesor }}</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+{% endblock content %}
