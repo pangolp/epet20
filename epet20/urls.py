@@ -7,4 +7,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('apps.core.urls')),
     path('asesoria/', include('apps.asesoria.urls')),
+    path('secretaria/', include('apps.secretaria.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
