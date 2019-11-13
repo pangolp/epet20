@@ -2,19 +2,26 @@
 {% block titulo %}Asesoria: Novedades{% endblock titulo %}
 {% block content %}
 <div class="container">
-	<div class="row mt-3">
-		{% for novedad in novedades %}
-			<div class="col">
-				<div class="card" style="width: 18rem;">
-					<img src="{{ novedad.imagen.url }}" class="card-img-top" alt="{{ novedad.titulo }}">
-					<div class="card-body">
-						<h5 class="card-title">{{ novedad.titulo  }}</h5>
-						<p class="card-text">{{ novedad.contenido|safe|escape|truncatewords:20 }}</p>
-						<a href="{% url 'asesoria:novedad_detail' novedad.slug %}" class="btn btn-primary">Leer más</a>
+	{% for novedad in novedades %}
+		<div class="row mt-4">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="row no-gutters">
+						<div class="col-md-6">
+							<img src="{{ novedad.imagen.url }}" class="card-img img-responsive" alt="{{ novedad.titulo }}">
+						</div>
+						<div class="col-md-6">
+							<div class="card-body">
+								<h5 class="card-title text-center"><a href="#">{{ novedad.titulo }}</a></h5>
+								<p class="card-text">{{ novedad.contenido|safe|escape|truncatewords:50}}</p>
+								<p class="card-text no-padding-margin"><small class="text-muted">Publicado por: <strong>{{ novedad.user.last_name|title }}, {{ novedad.user.first_name|title }}</strong></small></p>
+								<p class="card-text no-padding-margin"><small class="text-muted">Fecha de publicación: <strong>{{ novedad.fecha_alta|date:"d-m-y" }}</strong></small></p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		{% endfor %}
-	</div>
+		</div>
+	{% endfor %}
 </div>
 {% endblock content %}

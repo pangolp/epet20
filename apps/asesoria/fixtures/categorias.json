@@ -1,0 +1,34 @@
+[
+{
+    "model": "asesoria.categoria",
+    "pk": 1,
+    "fields": {
+        "nombre": "Padres",
+        "slug": "padres"
+    }
+},
+{
+    "model": "asesoria.categoria",
+    "pk": 2,
+    "fields": {
+        "nombre": "Alumnos",
+        "slug": "alumnos"
+    }
+},
+{
+    "model": "asesoria.categoria",
+    "pk": 3,
+    "fields": {
+        "nombre": "Docentes",
+        "slug": "docentes"
+    }
+},
+{
+    "model": "asesoria.categoria",
+    "pk": 4,
+    "fields": {
+        "nombre": "Comunidad Educativa",
+        "slug": "comunidad-educativa"
+    }
+}
+]
