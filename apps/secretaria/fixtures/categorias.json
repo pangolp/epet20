@@ -1,0 +1,34 @@
+[
+{
+    "model": "secretaria.categoria",
+    "pk": 1,
+    "fields": {
+        "nombre": "Padres",
+        "slug": "padres"
+    }
+},
+{
+    "model": "secretaria.categoria",
+    "pk": 2,
+    "fields": {
+        "nombre": "Alumnos",
+        "slug": "alumnos"
+    }
+},
+{
+    "model": "secretaria.categoria",
+    "pk": 3,
+    "fields": {
+        "nombre": "Docentes",
+        "slug": "docentes"
+    }
+},
+{
+    "model": "secretaria.categoria",
+    "pk": 4,
+    "fields": {
+        "nombre": "Comunidad Educativa",
+        "slug": "comunidad-educativa"
+    }
+}
+]

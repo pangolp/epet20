@@ -1,0 +1,35 @@
+[
+{
+    "model": "secretaria.materia",
+    "pk": 1,
+    "fields": {
+        "nombre": "Programaci\u00f3n WEB",
+        "a\u00f1o": 6,
+        "fecha_hora": "2019-11-13T11:00:00Z",
+        "aula": "Sal\u00f3n multimedia",
+        "profesores": "Ortega Enrique, Zuchelli Javier, Pagani Walter"
+    }
+},
+{
+    "model": "secretaria.materia",
+    "pk": 2,
+    "fields": {
+        "nombre": "Flutter Avanzado",
+        "a\u00f1o": 6,
+        "fecha_hora": "2019-11-14T11:00:00Z",
+        "aula": "Sal\u00f3n Multimedia",
+        "profesores": "Ortega Enrique, Zuchelli Javier"
+    }
+},
+{
+    "model": "secretaria.materia",
+    "pk": 3,
+    "fields": {
+        "nombre": "Django Rest Framework",
+        "a\u00f1o": 5,
+        "fecha_hora": "2019-11-15T11:00:00Z",
+        "aula": "Anfiteatro II",
+        "profesores": "Pagani Walter"
+    }
+}
+]

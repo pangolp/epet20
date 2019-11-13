@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block titulo %}Mesa de examen{% endblock titulo %}
+{% block content %}
+<div class="container">
+	<div class="row mt-4">
+		<div class="table-responsive">
+			<table class="table text-center">
+				<thead>
+					<tr>
+						<th scope="col">Nombre</th>
+						<th scope="col">Apellido</th>
+						<th scope="col">Materia</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for alumno in alumnos_registrados  %}
+						<tr>
+							<td>{{ alumno.apellido }}</td>
+							<td>{{ alumno.nombre }}</td>
+							<td>{{ alumno.materia }}</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+{% endblock content %}

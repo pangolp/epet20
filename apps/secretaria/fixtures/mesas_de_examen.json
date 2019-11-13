@@ -1,0 +1,24 @@
+[
+{
+    "model": "secretaria.registromesaexamen",
+    "pk": 1,
+    "fields": {
+        "nombre": "Walter",
+        "apellido": "Pagani",
+        "dni": 34090047,
+        "materia": 3,
+        "correo_electronico": "paganiwalter@hotmail.com"
+    }
+},
+{
+    "model": "secretaria.registromesaexamen",
+    "pk": 2,
+    "fields": {
+        "nombre": "Enrique",
+        "apellido": "Ortega",
+        "dni": 30711578,
+        "materia": 2,
+        "correo_electronico": "enrique_ortega@gmail.com"
+    }
+}
+]

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block titulo %}Materia: {{ materia.nombre }}{% endblock titulo %}
+{% block content %}
+<div class="container">
+	<div class="row mt-4">
+		<div class="col-md-12">
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title"><strong>Nombre:</strong> {{ materia.nombre }}</h5>
+					<h5 class="card-title"><strong>Profesores:</strong> {{ materia.profesores }}</h5>
+					<h5 class="card-title"><strong>Año:</strong> {{ materia.año }}</h5>
+					<h5 class="card-title"><strong>Fecha y hora:</strong> {{ materia.fecha_hora }}</h5>
+					<h5 class="card-title"><strong>Aula:</strong> {{ materia.aula }}</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}
